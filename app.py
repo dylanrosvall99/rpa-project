@@ -58,7 +58,7 @@ show_message('Question 2 Complete','Continue')
 # Question 3
 
 # INSERT ANSWER FOR QUESTION 3 HERE
-df = get_pdf(directory+ 'MasterInvoice copy.pdf')
+df = get_pdf(directory+ 'MasterInvoice.pdf')
 display(df)
 
 def get_order_data(invoice_num,filename,directory):
