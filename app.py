@@ -54,7 +54,7 @@ product_prices = {}
 for index, row in df1.iterrows():
     product_prices[row['Unit number']] = row['Price per unit']
 
-
+show_message('Question 2 Complete','Continue')
 # Question 3
 
 # INSERT ANSWER FOR QUESTION 3 HERE
@@ -119,13 +119,16 @@ def get_order_data(invoice_num,filename,directory):
 dictionary, n, e, d = get_order_data(12831, 'Order1.xlsx', '/Users/dylanrosvall/Documents/ACC 525/17 - Project 3 - Robotic Process Automation/')
 print(dictionary, n, e, d)
 
+show_message('Question 3 Complete','Continue')
+
 # Question 4
 
 # INSERT ANSWER FOR QUESTION 4 HERE
 def create_invoice(invoice_num, order_data, directory):
     create_pdf(directory + 'MasterInvoice.pdf', directory + f'Invoice {invoice_num}.pdf',order_data)
 
-create_invoice(8515,dictionary,directory)
+show_message('Question 4 Complete','Continue')
+
 
 # Question 5
 
@@ -193,6 +196,7 @@ Email: sales@pythontechco.com"""
 
 send_email(8515,'Thomas Holt', 'dylanrosvall@gmail.com','11/12/2023',directory)
 
+show_message('Question 5 Complete','Continue')
 # Question 6
 
 # INSERT ANSWER FOR QUESTION 6 HERE
@@ -209,4 +213,4 @@ for filename in filenames:
         send_email(invoice_num,name,email,date,directory)
         invoice_num = invoice_num + 1
 
-
+show_message('Question 6 Complete','Continue')
